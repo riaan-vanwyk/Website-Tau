@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <script>
+    (function () {
+      // Everything after "/goto?" — no decoding needed for normal URLs,
+      // but try decodeURIComponent in case the link was percent-encoded
+      var raw = window.location.search.slice(1); // strips the leading "?"
+      var target = raw;
+
+      if (!raw) {
+        document.body.textContent = "Usage: /goto?https://example.com";
+        return;
+      }
+
+      try { target = decodeURIComponent(raw); } catch (e) { /* use raw */ }
+
+      // Only allow http(s) URLs — refuse javascript: or data: tricks
+      if (!/^https?:\/\//i.test(target)) {
+        document.body.textContent = "Invalid or missing URL after /goto?";
+        return;
+      }
+
+      try {
+        // Navigate the parent window (breaks out of an iframe)
+        parent.location.href = target;
+      } catch (e) {
+        // Fallback: navigate this frame itself
+        window.location.href = target;
+      }
+    })();
+  </script>
+</head>
+<body style="font-family: sans-serif">
+  <noscript>JavaScript is required for this redirect to work.</noscript>
+</body>
+</html>
