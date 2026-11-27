@@ -1,0 +1,647 @@
+/**********************************************************************************
+ 
+DEVELOPER: Suzan Laubscher
+LAST UPDATED: 14/08/2020
+
+**********************************************************************************/
+
+
+/*******************************************
+ H1 - 5 Headings
+*******************************************/
+H1 {line-height: normal}
+H2 {line-height: normal}
+H3 {line-height: normal}
+H4 {line-height: normal}
+H5 {line-height: normal}
+
+
+
+/*******************************************
+ SPEACH BUBBLES - LEFT AND RIGHT 
+*******************************************/
+
+/* Speech Bubble Insight */
+.insight-section ul li{
+  list-style: none;
+  margin-top:10px;
+  position: relative;
+}
+.insight-section ul{
+  padding: 0px;
+}
+.left-insight img,.right-insight img {
+  width:70px;
+  height:70px;
+  float:left;
+  margin:0px 5px;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+}
+.right-insight img{
+  float:right;
+}
+.left-insight,.right-insight{
+  overflow: hidden;
+}
+.left-insight p,.right-insight p{
+  background-color: #B9E3E3; /* SPEACH LEFT COLOUR */
+  padding: 10px;
+  color: black;
+  border-radius: 5px; 
+  float:left;
+  width:60%;
+  margin-bottom:20px;
+  margin-left: 0px;
+  
+}
+.right-insight p{
+  float:right;
+  background-color: #C8D9E8; /* SPEACH RIGHT COLOUR */
+  color: black;
+  margin-right: 2px;
+}
+.left-insight:before{
+  content: " ";
+  position:absolute;
+  top:0px;
+  left: 65px;
+  bottom:150px;
+  border:15px solid transparent;
+  border-top-color: #B9E3E3; /* SPEACH LEFT COLOUR */
+}
+.right-insight:before{
+  content: " ";
+  position:absolute;
+  top:0px;
+  right:67px;
+  bottom:150px;
+  border:15px solid transparent;
+  border-top-color:#C8D9E8 ; /* SPEACH RIGHT COLOUR */
+}
+
+/* Panel Instructor Insight - Uses bootstrap panel classes */
+.panel-insight-speaker { /* Did not use img because someone may want another image with different styling */
+	display: block;
+	max-width: 130px;
+	max-height: 130px;
+	width: auto;
+	height: auto;
+	margin-right: 10px;
+	float: left;
+	box-shadow: 4px 4px 2px grey;
+}
+.panel-insight-title {
+	margin: 0 0 0 0;
+}
+
+
+
+/******************************
+ Callouts
+******************************/
+.callout-title {
+	margin: 0 0 0 0;
+}
+.callout-icon {
+	width: 30px; height: 30px;
+	float: left;
+	margin-right: 8px;
+}
+
+
+/*******************************************
+ PAGE CSS BANNERS WITH HEADERS 
+*******************************************/
+.image-stripe {
+ width: auto;
+ height: auto;
+ position: relative;
+ background: rgba(255, 255, 255, 255) ;
+ color: #fff;
+ text-align: center;
+ padding: 0.5em 1em;
+ margin-left: 0px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+ margin-right: 0px;
+ font-size: 20px;
+ font-weight: bold;	
+} 
+
+
+.image-stripe-backgroundimg-A {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-A.jpg"), url("Site_CSS_Banner-A.png");
+}
+
+.image-stripe-backgroundimg-B {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-B.jpg"), url("Site_CSS_Banner-B.png");
+}
+
+.image-stripe-backgroundimg-C {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-C.jpg"), url("Site_CSS_Banner-C.png");
+}
+
+.image-stripe-backgroundimg-D {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-D.jpg"), url("Site_CSS_Banner-D.png");
+}
+
+.image-stripe-backgroundimg-E {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-E.jpg"), url("Site_CSS_Banner-E.png");
+}
+
+.image-stripe-backgroundimg-F {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-F.jpg"), url("Site_CSS_Banner-F.png");
+}
+
+.image-stripe-backgroundimg-G {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-G.jpg"), url("Site_CSS_Banner-G.png");
+}
+
+.image-stripe-backgroundimg-H {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-H.jpg"), url("Site_CSS_Banner-H.png");
+}
+
+.image-stripe-backgroundimg-I {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-I.jpg"), url("Site_CSS_Banner-I.png");
+}
+
+.image-stripe-backgroundimg-J {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-J.jpg"), url("Site_CSS_Banner-J.png");
+}
+
+.image-stripe-backgroundimg-K {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-K.jpg"), url("Site_CSS_Banner-K.png");
+}
+
+.image-stripe-backgroundimg-L {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-L.jpg"), url("Site_CSS_Banner-L.png");
+}
+
+.image-stripe-backgroundimg-M {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-M.jpg"), url("Site_CSS_Banner-M.png");
+}
+
+.image-stripe-backgroundimg-N {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-N.jpg"), url("Site_CSS_Banner-N.png");
+}
+
+.image-stripe-backgroundimg-O {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-O.jpg"), url("Site_CSS_Banner-O.png");
+}
+
+.image-stripe-backgroundimg-P {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-P.jpg"), url("Site_CSS_Banner-P.png");
+}
+
+.image-stripe-backgroundimg-Q {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-Q.jpg"), url("Site_CSS_Banner-Q.png");
+}
+
+.image-stripe-backgroundimg-R {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-R.jpg"), url("Site_CSS_Banner-R.png");
+}
+
+.image-stripe-backgroundimg-S {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-S.jpg"), url("Site_CSS_Banner-S.png");
+}
+
+.image-stripe-backgroundimg-CTL {
+	background-size:     cover ;
+	background-repeat:   repeat;
+	background-position: center center; 
+	border-radius: 20px;
+	background-image: url("Site_CSS_Banner-CTL.jpg"), url("Site_CSS_Banner-CTL.png");
+}
+.image-stripe-bigtext {
+ font-size: calc(0.7em + 3.2vmin);
+ font-weight: bold;
+		padding: 10px;
+	margin: 10px;
+}
+
+.non-semantic-protector { 
+position: relative; z-index: 1; 
+padding-top: .01em;
+padding-bottom: .01em;
+}
+
+
+/********************************************************
+******************************
+
+TOOLS COLOUR CHANGES - DEFUALT
+
+*******************************************
+*******************************************/
+
+
+/* Comment tool */
+.column .commentDiv {
+  background-color: #DFDFDF;
+}
+
+/* Question tool */
+.column .questionDiv .contentCol {
+  background-color:#DFDFDF;
+}
+
+/* Checklist tool */
+.column .checklistDiv {
+  background-color:#DFDFDF;
+}
+
+/* Forum tool */
+.column .forumSummaryHeaderDiv {
+  background-color:#DFDFDF;
+}
+
+/* Announcements tool */
+.column .announcementsHeaderDiv {
+  background-color: #DFDFDF;
+}
+
+/* Student content tool */
+.column .studentContentTable {
+  background-color: #DFDFDF;
+}
+
+/********************************************************
+******************************
+
+CUSTOM CSS NAMES FOR ANY TOOLS COLOUR CHANGES 
+
+*******************************************
+*******************************************/
+
+/* Any tool = toolred  */
+.column .toolred {
+  background-color: #ffcdd2  ;
+}
+/* Any tool = toolpink  */
+.column .toolpink{
+  background-color: #f8bbd0 ;
+}
+/* Any tool = toolpurple  */
+.column .toolpurple{
+  background-color: #e1bee7 ;
+}
+/* Any tool = tooldeeppurple */
+.column .tooldeeppurple{
+  background-color: #d1c4e9 ;
+}
+/* Any tool = toolindigo  */
+.column .toolindigo{
+  background-color: #c5cae9  ;
+}
+/* Any tool = toolblue  */
+.column .toolblue{
+  background-color: #bbdefb ;
+}
+/* Any tool = toolcyan  */
+.column .toolcyan{
+  background-color: #b2ebf2 ;
+}
+/* Any tool = toolteal  */
+.column .toolteal{
+  background-color: #b2dfdb ;
+}
+/* Any tool = toolgreen  */
+.column .toolgreen{
+  background-color: #c8e6c9  ;
+}
+/* Any tool = toollime  */
+.column .toollime{
+  background-color: #f0f4c3   ;
+}
+/* Any tool = toolyellow  */
+.column .toolyellow{
+  background-color: #ffecb3  ;
+}
+/* Any tool = toolorange  */
+.column .toolorange{
+  background-color: #ffe0b2 ;
+}
+/* Any tool = tooldeeporange */
+.column .tooldeeporange{
+  background-color: #ffccbc ;
+}
+/* Any tool = toolbrown  */
+.column .toolbrown{
+  background-color: #d7ccc8 ;
+}
+/* Any tool = toolbluegrey */
+.column .toolbluegrey{
+  background-color: #cfd8dc ;
+}
+/* Any tool = toolpurplegrey */
+.column .toolpurplegrey{
+  background-color: #b1bace ;
+}
+/* Any tool = toolgrey  */
+.column .toolgrey{
+  background-color:#e0e0e0  ;
+}
+
+
+/*******************************************
+ HYPERLINK COLOUR CHNAGES - IN DEFUALT COLUM
+*******************************************/
+.column a[href]{
+  color: #004860;
+}
+/*******************************************
+*******************************************
+
+CONTENT PANELS / SECTIONS PROPERTIES AND DESIGN
+
+*******************************************
+*******************************************/
+
+/*******************************************
+ COLAPSABLE BAR OF SECTIONS
+*******************************************/
+
+.sectionHeader{
+  background-color:#FFF  ;
+  border-color: #636363 ;
+  border-width: 2px;
+  border-radius: 8px;
+  color:#262626 ;
+  font-size: calc(1em + 0.4vw);
+}
+
+.sectionHeader.collapsibleSectionHeader {
+  background-color:#E0E0E0  ;
+  border-color: #636363 ;
+  border-width: 2px;
+  border-radius: 8px;
+  color:#262626 ;
+  font-size: calc(1em + 0.4vw);
+}
+
+.sectionHeader.collapsibleSectionHeader:hover {
+  background-color:#eeedee  ;
+}
+
+
+/*******************************************
+ COLUM COLOUR AND BORDER COLOUR  - IN DEFUALT COLUM
+*******************************************/
+
+.column {
+   background-color: #ffffff;
+   border-color: #DADADA;
+}
+
+.coltrans
+{
+   background-color: transparent !important;
+   border-color: rgba(0,0,0,0.00);
+}
+
+/*******************************************
+ COLUM COLOUR CHANGES - COLUM SETTINGS / COLOURS
+*******************************************/
+/**colgray********************************/
+.colgray {
+   background-color: #f0f0f0;
+   border-color: #222;
+}
+.colgray .commentDiv, .colgray .studentContentTable, .colgray .questionDiv .contentCol, .colgray .checklistDiv, .colgray .forumSummaryHeaderDiv, .colgray .announcementsHeaderDiv, .colgray .fc-toolbar {
+  background-color: #b8b8b8;
+}
+.colgray a[href]{
+  color:black;
+}
+/**colred********************************/
+.colred {
+   background-color: #fff0f0;
+   border-color: #600;
+   color: #4660000;
+}
+.colred .commentDiv, .colred .studentContentTable, .colred .questionDiv .contentCol, .colred .checklistDiv, .colred .forumSummaryHeaderDiv, .colred .announcementsHeaderDiv, .colred .fc-toolbar {
+  background-color: #ffb3b3;
+}
+.colred a[href], .colred h3.author {
+  color: black;
+}
+/**colblue********************************/
+.colblue {
+   background-color: #f4f4ff;
+   background-color: #e6f9ff;
+   border-color: #004;
+   color: #004;
+}
+.colblue .commentDiv, .colblue .studentContentTable, .colblue .questionDiv .contentCol, .colblue .checklistDiv, .colblue .forumSummaryHeaderDiv, .colblue .announcementsHeaderDiv, .colblue .fc-toolbar {
+  background-color: #b3d9ff;
+  background-color: #99e7ff;
+}
+.colblue a[href] {
+  color: black;
+}
+/**colgreen********************************/
+.colgreen {
+   background-color: #f6fff6;
+   border-color: #030;
+   color: #030;
+}
+.colgreen .commentDiv, .colgreen .studentContentTable, .colgreen .questionDiv .contentCol, .colgreen .checklistDiv, .colgreen .forumSummaryHeaderDiv, .colgreen .announcementsHeaderDiv, .colgreen .fc-toolbar {
+  background-color: #9fc;
+}
+.colgreen a[href] {
+  color: black;
+}
+/**colyellow********************************/
+.colyellow {
+   background-color: #ffffe8;
+   border-color: #840;
+   color: #4b2600;
+}
+.colyellow .commentDiv, .colyellow .studentContentTable, .colyellow .questionDiv .contentCol, .colyellow .checklistDiv, .colyellow .forumSummaryHeaderDiv, .colyellow .announcementsHeaderDiv, .colyellow .fc-toolbar {
+  background-color:  #ffd480
+}
+.colyellow a[href],.colyellow h3.author {
+  color: black;
+}
+
+/*******************************************
+*******************************************
+
+SUB-PAGE BUTTONS - SHOW AS BUTTON RATHER THAT LINK
+
+*******************************************
+*******************************************/
+/* COLOUR OF BUTTOM*/
+.link-div .usebutton {
+    background-color: #DDDDDD;
+}
+.link-div:hover .usebutton:hover {
+    background-color: #E5E5E5;
+}
+
+/* SIZE OF BUTTON*/
+.ui-button-text {
+	padding: 0.3em 0.9em !important
+}
+
+
+/*******************************************
+*******************************************
+
+TEXT PANELS / CARDS - COLOUR CHANGES
+
+https://mdbootstrap.com/docs/jquery/css/colors/
+
+*******************************************
+*******************************************/
+
+/*Colour = primary*************************/
+.panel-primary {
+    border-color: #4E285E;
+}
+.panel-primary > .panel-heading {
+    background: linear-gradient(to right, #825794   35%, #613782  100%);
+    color: #FFF;
+    border-color: #4E285E;
+}
+
+/*Colour = info*************************/
+.panel-info {
+    border-color: #7e57c2;
+}
+.panel-info > .panel-heading {
+    background: linear-gradient(to right, #d1c4e9   35%, #b39ddb   100%);
+    color: #2B1E42;
+    border-color: #7e57c2;
+}
+
+/*Colour = custom-A*************************/
+.panel-custom-A {
+    border-color: #2e3951 ;
+}
+.panel-custom-A > .panel-heading {
+    background: linear-gradient(to right, #45526e   35%, #59698d    100%); 
+    color: #FFF;
+    border-color: #2e3951 ;
+}
+
+/*Colour = custom-B*************************/
+.panel-custom-B {
+    border-color: #7283a7   ;
+}
+.panel-custom-B > .panel-heading {
+    background: linear-gradient(to right, #d0d6e2   35%, #b1bace   100%); 
+    color: #3b465e ;
+    border-color: #7283a7   ;
+}
+
+
+/*******************************************
+*******************************************
+
+TEXT PANELS / ALERT NOTICES - COLOUR CHNAGES
+
+*******************************************
+*******************************************/
+
+/*Colour = warning******************/
+.alert-warning{
+  background-color:#d1c4e9;
+  border-color:#A298B5 ;
+  color:#493869 ;
+}
+
+/*Colour = A*******************/
+.alert-custom-A{
+  background-color:#45526e ;
+  border-color: #3B465E ;
+  color:#FFF ;
+}
+
+/*Colour = B*******************/
+.alert-custom-B{
+  background-color:#d0d6e2  ;
+  border-color: #AEB3BD ;
+  color:#3b465e  ;
+}
+
+
+
